@@ -1,5 +1,15 @@
 #include <iostream>
 
 int main() {
-	std::cout<<"hello"<<std::endl;
+	int star;
+
+	std::cout<<"Кол-во звезд: ";
+	std::cin>>star;
+	for(char i=0;i<star;++i) {
+		std::cout<<"*";
+		for(char j=0;j<i;++j) {
+			std::cout<<"*";
+		}
+		std::cout<<"\n";
+	}
 }
